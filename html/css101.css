@@ -1,0 +1,57 @@
+body{
+	background-color: green;
+}
+#container{
+	background-color: blue;
+	/*the default is always 100% (of the parent) Change the width from 100% to 80%*/
+	width: 80%;
+	/*in doing that, the block STILL takes 100%, so margin is added*/
+	/*to set the container in the middle of it's parent, put equal portions of margin on both sides*/
+	margin: auto;
+	color: white;
+	/*dont move the container...move the stuff INSIDE the container*/
+	text-align: center;
+}
+/*a space (as opposed to a ,) means parent > child*/
+#container .the-block{
+	width: 48%;
+	display: inline-block;
+	vertical-align: top;
+}
+/*to target more than one element you use a , to separate*/
+.the-block, .the-block2{
+	font-size: 50px;
+}
+/*to target an element with 2 classes, you dont inclue a space*/
+.the-block.one{
+	border: 5px solid red;
+}
+/*!important, reigns supreme. Then it will use more specific...more selectors the better*/
+
+.parent{
+	width: 200px;
+	height: 200px;
+	background-color: yellow;
+}
+/*> is like a space, but will ONLY go one layer down*/
+.parent > div{
+	width: 100px;
+	height: 100px;
+	background-color: salmon;
+}
+
+.parent > div > div{
+	width: 50px;
+	height: 50px;
+	background-color: skyblue;
+}
+
+.inline-tag{
+	color: white;
+	font-size: 70px;
+	width: 10px;
+	height: 10px;
+	padding: 100px;
+	margin: 100px;
+	display: inline-block;
+}

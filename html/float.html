@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="float.css">
+</head>
+<body>
+
+	<h1>Float (makes no sense)</h1>
+	<ol>
+		<li>A block level element when floated, no longer takes up the whole parent. It's no longer a block. It's not even a display type. You can't add margin.</li>
+		<li>The element, will go as far left (or right) as it possible can, until it runs into another floating thing or runs out of room.</li>
+		<li>A floated element is in it's own universe. They dont pass their height up to non-floating parents. Static + float = weird.</li>
+		<ol>
+			<li>IMPORTANT: to force a floated element to pass it's height up to its parent... Make the parent float or Set the parent to have overflow:hidden.</li>
+		</ol>
+	</ol>
+
+	<div id="container">
+		
+		<div class="left">
+			Text in left. Text in left. Text in left. Text in left. Text in left. Text in left.
+		</div>
+
+		<div class="left">
+			Text in left. Text in left. Text in left. Text in left. Text in left. Text in left.
+		</div>
+
+		<div class="left">
+			Text in left. Text in left. Text in left. Text in left. Text in left. Text in left.
+		</div>
+
+		<div class="right">
+			Text in right. Text in right. Text in right. Text in right. Text in right. Text in right.
+		</div>
+
+	</div>
+</body>
+</html>

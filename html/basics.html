@@ -1,0 +1,108 @@
+<!-- Doctype tells the browser how this thing should be processed -->
+<!DOCTYPE html>
+<html>
+
+<!-- Head tag is where most of the stuff the user doesn't need  to see goes. Like css, js, meta tags, ect. -->
+<Head>
+	<TITLE>Basic HTML</TITLE>
+	<style type="text/css">
+	/*tag = red; .class = green; #id = green (id's are unique, only 1 id per page)*/
+	body{
+		color: red;
+	}
+	.center{
+		text-align: center;
+	}
+	table tbody tr td{
+		color: blue;
+	}
+	</style>
+
+	<script type="text/javascript"></script>
+</Head>
+<!-- If it's green, its an attribute -->
+<body id="" class="" ref="" style="background: white">
+
+	<div class = "center">Center the text</div>
+
+	<form action="" method="">
+		<input type="text"/>
+		<input type="password"/>
+		<input type="email" />
+		<input type="number" />
+		<input type="date"/>
+	</form>
+	<!-- All the stuff the user is supposed to see -->
+
+	<!-- Inline = content that makes the web. Stuff like: text, images, videos
+	Inline element will take up as much space as it needs to unless told otherwise. They do not start new lines
+
+	Block level elements are usually stuff that people dont see. div
+	Block elements start new lines or take up 100% of the space available to them -->
+
+	<div style="width: 100px; height: 100px; border: black 1px solid"></div>
+
+	<table border="1">
+		<thead>
+			<!-- A table is organized by:
+			tr = row
+			inside of rows are td = columns -->
+			<tr>
+				<th class="table-head">Name <span>Player</span></th>
+				<th>City</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Jordan</td>
+				<td>Chicago</td>
+			</tr>
+			<tr>
+				<td>Koby</td>
+				<td>LA</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<img width=100 src="https://i.imgur.com/ZkCaZyR.jpg"/>
+	<br/>
+
+	<a href="http://www.espn.com" target="_blank">This is an anchor tag</a>
+
+	<a href="tel: 15555555555">555</a>
+	<a href="mailto: random@gmail.com">Email me</a>
+
+	<ol>
+		<li>Item 1</li>
+		<li>Item 2</li>
+	</ol>
+
+	<ul>
+		<li>Item 1</li>
+		<li>Item 2</li>
+	</ul>
+
+	<ol>
+		<li>Item 1</li>
+		<ul>
+			<li>Sub item 1</li>
+			<li>Sub item 2</li>
+		</ul>
+		<li>Item 2</li>
+	</ol>
+
+	<h1>Im an H1</h1>
+	<h2>Im an H2</h2>
+
+	<strong>I change what's inside me</strong>
+	<br/>
+	<em>Italics</em>
+	<blockquote>Strike!</blockquote>
+
+	<div>
+		I am a structural tag
+	</div>
+
+	<p>I'm a p tag</p>
+</body>
+</html>

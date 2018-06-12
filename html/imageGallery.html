@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- title used by the broser tab system and all the SEO stuff -->
+	<title>Places to visit in Georgia!</title>
+
+	<style type="text/css">
+		/*Styles will go here*/
+		#gallery-wrapper{
+			text-align: center;
+		}
+		#middle-section{
+			float: left;
+			width: 20%;
+		}
+		#bottom-section{
+			float: right;
+			padding-top: 15px;
+			width: 80%;
+		}
+		.thumb{
+			width: 69.7%;
+			margin: 0px 0px 11px 0px;
+			text-align: center;
+			/*2 numbers = 1st: top and bottom, 2nd = left and right*/
+			/*3 numbers = 1st: top, 2nd = left and right, 3rd = the bottom*/
+			/*4 numbers = top, right, bottom, left*/
+		}
+		ul{
+			padding-left: 5px;
+		}
+		li{
+			list-style-type: none;
+		}
+
+		img{
+			width: 1000px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<!-- A wrapper for the entire gallery. A div does nothing other than help us organize the layout of our page -->
+	<div id="gallery-wrapper">
+		<div id="top-section">
+			<h1>A photo gallery made with HTML, JS, and CSS. And a whole lot of love.</h1>
+		</div>
+
+		<div id="middle-section">
+			<ul>
+				<li><img class="thumb" src="./ga_pics/arabia_mnt.jpg" onClick="bigPic.src = this.src" /> </li>
+				<li><img class="thumb" src="./ga_pics/callaway_gardens.jpg" onClick="bigPic.src = this.src"/></li>
+				<li><img class="thumb" src="./ga_pics/Etowah_Indian_Mounds.jpg" onClick="bigPic.src = this.src" /></li>
+				<li><img class="thumb" src="./ga_pics/prov_state_canyon.jpg" onClick="bigPic.src = this.src"/></li>
+				<li><img class="thumb" src="./ga_pics/wormsloe.jpg" onClick="bigPic.src = this.src"/></li>
+			</ul>
+		</div>
+
+		<div id="bottom-section">
+			<img src="./ga_pics/prov_state_canyon.jpg" name="bigPic"/>
+		</div>
+	</div>
+
+</body>
+</html>

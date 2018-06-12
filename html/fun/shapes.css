@@ -1,0 +1,58 @@
+.top-triangle{
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid green;
+	position: relative;
+	left: 50%;
+}
+.middle-triangle{
+	border-bottom: 100px solid green;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	height: 0;
+	width: 80px;
+	position: relative;
+	left:47%;
+}
+.bottom-triangle{
+	border-bottom: 100px solid green;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	height: 0;
+	width: 120px;
+	position: relative;
+	left:45.5%;
+}
+.tree-bottom{
+	position: relative;
+	width: 50px;
+	height: 100px;
+	background: brown;
+	left: 52%;
+}
+.pacman{
+	width: 0px;
+ 	height: 0px;
+ 	border-right: 10px solid transparent;
+ 	border-top: 10px solid yellow;
+	border-left: 10px solid yellow;
+	border-bottom: 10px solid yellow;
+	border-top-left-radius: 60px;
+  	border-top-right-radius: 60px;
+  	border-bottom-left-radius: 60px;
+  	border-bottom-right-radius: 60px;
+  	position: relative;
+  	left: 50%;
+  	bottom: 150px;
+}
+.moon{
+	width: 40px;
+  	height: 40px;
+  	border-radius: 45%;
+  	box-shadow: 15px 15px 0 0 white;
+  	position: relative;
+  	left: 52%;
+  	bottom: 300px;
+}
